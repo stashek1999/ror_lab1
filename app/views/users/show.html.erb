@@ -1,0 +1,7 @@
+<h1>Hello, <%= @user.firstname %>!</h1>
+<p>Your age is:  <%= @user.age %></p>
+<p>Your phone is:  <%= @user.phone %></p>
+<p>Your email is:  <%= @user.email %></p>
+
+<%= image_tag @user.avatar.url(:medium) %>
+<p><%= link_to "Home", root_path %></p>
